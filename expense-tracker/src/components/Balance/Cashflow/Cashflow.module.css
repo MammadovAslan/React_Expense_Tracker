@@ -1,0 +1,28 @@
+.cash_flow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
+  flex-basis: 50%;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.amount {
+  font-size: 26px;
+}
+
+.cash_flow:first-child::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: rgb(184, 181, 181);
+  width: 15%;
+  transform: rotate(90deg);
+  right: 43%;
+}

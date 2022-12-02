@@ -1,0 +1,63 @@
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 6px 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.transaction::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  right: 0;
+}
+
+.income::after {
+  background-color: green;
+}
+.expense::after {
+  background-color: crimson;
+}
+
+.transaction:hover .delete_button,
+.transaction:hover .edit_button {
+  display: block;
+}
+
+.delete_button,
+.edit_button {
+  position: absolute;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 4px;
+  display: none;
+}
+
+.delete_button {
+  background-color: #e74c3c;
+  left: -48px;
+}
+
+.edit_button {
+  background-color: rgb(127, 157, 255);
+  left: -31px;
+}
+
+@media (max-width: 450px) {
+  .delete_button {
+    left: 0;
+  }
+
+  .edit_button {
+    left: 17px;
+  }
+
+  .delete_button,
+  .edit_button {
+    top: -24px;
+  }
+}

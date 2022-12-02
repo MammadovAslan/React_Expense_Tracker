@@ -1,0 +1,23 @@
+.container {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.input {
+  box-sizing: border-box;
+  padding: 6px;
+  width: 100%;
+  font-size: 18px;
+}

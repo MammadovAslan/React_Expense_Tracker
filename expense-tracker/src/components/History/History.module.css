@@ -1,0 +1,19 @@
+.history {
+  align-self: flex-start;
+  margin-top: 36px;
+  width: 100%;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+@media (max-width: 450px) {
+  .transactions {
+    padding-top: 28px;
+    gap: 32px;
+  }
+}

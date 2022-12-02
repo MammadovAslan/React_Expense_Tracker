@@ -1,0 +1,38 @@
+.modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(17, 17, 17, 0.507);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(184, 181, 181);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.close_modal {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.close_modal:hover {
+  opacity: 0.7;
+}
+.close_modal:active {
+  opacity: 1;
+}

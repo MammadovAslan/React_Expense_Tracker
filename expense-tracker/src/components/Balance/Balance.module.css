@@ -1,0 +1,41 @@
+.balance {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.cash_flow {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(184, 181, 181);
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount {
+  text-transform: uppercase;
+}
+
+.income {
+  color: green;
+}
+
+.expense {
+  color: crimson;
+}
+
+.count {
+  font-size: 36px;
+}
